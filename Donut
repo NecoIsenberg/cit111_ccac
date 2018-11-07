@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaObjects;
+
+/**
+ * "Blue Print" class for
+ * modeling a real life
+ * donut in Java :)
+ * @author Neco Isenberg
+ */
+public class Donut {
+    //member variables
+    //that all Donut objects have
+    String donutType;
+    public String name;
+    String size;
+    int percRemaining = 100; 
+    
+    //methods take in an interger represent the size of bite
+    // being taken of this dount. returns nothing
+    public void simulateEating(int percentEaten){
+        //subtract the bite size from the exisiting dount percent
+        percRemaining = percRemaining - percentEaten;
+    
+            }// closes method
+    
+    //method: takes no input parameters and returns percRemaining
+    public int getPercRemaing(){
+        //send back the value of one of the object's
+        //member variables to the calling method. this is called a "getter"
+        return percRemaining;
+    }// closes method 
+    
+    //there's no main() method in this class!
+    //we must make this object with the new keyword inside another class
+    //in order for this class to do anything
+    
+} // close class 
