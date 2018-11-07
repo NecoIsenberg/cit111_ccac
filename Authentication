@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Authentication;
+
+import RetirementAge.*;
+import java.util.Scanner;
+/**
+ *
+ * @author Neco Isenberg
+ */
+public class Authentication {
+    public static void main(String[] args) {
+        int password;
+        // make a Scanner object and store in a variable whose name we can chose 
+        Scanner inputScanner = new Scanner(System.in);
+        // the test condition for this while statement is always true,
+        // so the looping will occur until the user issues a command to the compiuler
+        // to stop the execution
+        while(true){
+            // prompt the user age 
+            System.out.println("Eneter the system password to learn the protected information");
+            // read age from the console and store in variable
+            password = inputScanner.nextInt();
+            // implement basic if() password = Neco
+            if(password== 228){
+                // if true 
+                System.out.println("Correct Password");
+            } else {
+            if(password !=228){
+             } else {
+                System.out.println("Incorrect password,Please try again:");
+            }
+            }// close if/else block
+        }// close while() loop
+    }// close main method
+}// close class
