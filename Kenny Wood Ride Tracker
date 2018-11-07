@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ls3_classStructure;
+/**
+ *
+ * @author Neco Isenberg
+ */
+import java.util.Random;
+public class KennywoodRideTracker {
+    // member variable: accesibile to all 
+    int numSickRiders;
+    int avgHeight;
+    static int totalFailed;
+    static int totalSickRiders;
+    static int totalRiders;
+    // methods in the class
+    
+    public static void main(String[] args){
+        System.out.println("KennyWood Ride Tracker");
+        printRiderStats();
+        
+        rideThunderbolt(12,67);
+        printRiderStats();
+        
+        ridePhantom(16,65);
+        printRiderStats();
+    } // close main
+    
+       public static void rideThunderbolt(int riders, int avgHeight){
+        if(avgHeight >= 67){
+        System.out.println("Ride the Thunderbolt......");
+            System.out.println("It's made out of wood!");
+            totalRiders = totalRiders + riders;
+            Random rand = new Random();
+            int numSickRiders = rand.nextInt(riders);
+            totalSickRiders = totalSickRiders + numSickRiders;
+        } else {
+            System.out.println("sorry cant ride....grow and come back next year!");
+            totalFailed = totalFailed + riders;
+        }// end if/else
+    } // closes Thunderbolt
+       
+             public static void ridePhantom(int riders, int avgHeight){
+        if(avgHeight >= 65){
+        System.out.println("Ride the Phantom's Revenge......");
+            System.out.println("It's a steel cooster!");
+            totalRiders = totalRiders + riders;
+            Random rand = new Random();
+            int numSickRiders = rand.nextInt(riders);
+            totalSickRiders = totalSickRiders + numSickRiders;
+        } else {
+            System.out.println("sorry cant ride....grow and come back next year!");
+            totalFailed = totalFailed + riders;
+        }// end if/else
+    } // closes Phantom
+    
+             public static void printRiderStats(){
+                 System.out.println("   Rider Stats   ");
+                 System.out.println("Total Riders: " + totalRiders);
+                 System.out.println("Total Failed: " + totalFailed);
+                 System.out.println("Total Sick Riders: " + totalSickRiders);
+             }// closes Rider Stats 
+             
+} // clases class
