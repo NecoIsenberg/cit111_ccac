@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week8_methods2;
+
+/**
+ *
+ * @author Neco Isenberg
+ */
+import java.util.Scanner;
+public class GeometricShapes {
+    public static void main(String[] args){
+            Scanner cube = new Scanner(System.in);
+        // call calcVolumeOfCube() witht he user's side lenths as an arguement 
+        
+        System.out.println("Enter the side lenth of the cube: ");
+        double sideLength = cube.nextDouble();
+        
+        double returnedVolume = calcVolumeOfCube(sideLength);
+            
+        // print the inputs and the outputs to the console
+        System.out.println("The volume of the cubes with side length " + sideLength +" is: " + returnedVolume);
+    } 
+    
+    public static double calcVolumeOfCube(double sideLength){
+        double cubeVolume = Math.pow(sideLength, 3);
+        return cubeVolume;
+        
+    } // close method
+} // closes class
