@@ -1,0 +1,35 @@
+package control;
+
+import java.util.Scanner;
+/**
+ * Help make new friends. 
+ * Practicing if statements.
+ * @author Neco Isenberg
+ */
+public class MightWeBeFriends {
+    public static void main(String[] args){
+        // this builds a scanner object, and 
+        // stores int variable my scanner
+        System.out.println("Do you like sports?(0= no, 1 = yes)");
+        
+        Scanner myScanner = new Scanner(System.in); 
+        // read a line from the suer ande store in variable 
+        int userInput = myScanner.nextInt();
+        System.out.println("You typed: " + userInput);
+        
+        if(userInput >= 1){
+            userInput = userInput + 10;
+        
+            System.out.println("Nice! Do you play video games?");
+            // more questions
+            int q2_hobbyAnswer = myScanner.nextInt();
+            if(q2_hobbyAnswer == 10);
+            
+            System.out.println("Feelsbad Take Care :o");
+        } // end if/else blocks 
+        
+        // final check of compatibility score 
+            System.out.println("We can be friends");
+            System.out.println("I dont c this working out");
+        }// end if/else block 
+    } // close main method
