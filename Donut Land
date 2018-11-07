@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaObjects;
+
+/**
+ * Using Donut BluePrint
+ * Donut Land where 
+ * all donuts live
+ * @author Neco Isenberg
+ */
+public class DonutLand {
+ 
+    public static void main(String[] args){
+        // instanting a new Donut
+        // store a refrence to this particular
+        //Donut in a variable called firstDonut
+        Donut firstDonut;
+        firstDonut = new Donut();
+        firstDonut.name = "DO1";
+        firstDonut.donutType = "Powder";
+        firstDonut.size = "Small";
+        firstDonut.simulateEating(2);
+        firstDonut.getPercRemaing();
+        
+        
+        System.out.println("First Donut's name: " + firstDonut.name);
+        System.out.println("Checking first donut %: 100 ");
+        System.out.println("First Donut's percent remaining: " 
+        + firstDonut.percRemaining);
+        System.out.println("First Donut's type: " + firstDonut.donutType);
+        System.out.println("First Donut's size: " + firstDonut.size);
+        
+
+        
+        Donut secondDonut = new Donut();
+        secondDonut.name = "DO2";
+        secondDonut.donutType = "Power";
+        secondDonut.size = "Small";
+        secondDonut.simulateEating(52);
+        secondDonut.getPercRemaing();
+       
+        System.out.println("Checking second donut %: 100");
+        System.out.println("Second donut percent remaining: " 
+                + secondDonut.percRemaining);
+        System.out.println("Second Donut's name: " + secondDonut.name);
+        System.out.println("Second Donut's type: " + secondDonut.donutType);
+        System.out.println("Second Donut's size: " + secondDonut.size);
+    } // closes main
+    
+} // closes class
