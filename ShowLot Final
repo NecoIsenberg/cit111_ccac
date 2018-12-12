@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaObjects;
+/**
+ *
+ * @author neco.isenberg
+ */
+public class ShowLot {
+    
+    public static void main(String[] Args){
+        //simulate salesman pitch
+        // no user input ;(
+         Car firstCar;
+         firstCar = new Car();
+         firstCar.makeModel = "Kia Soul";
+         firstCar.year = 2018;
+         // salesman begins
+         System.out.println("L00k at this car: " + firstCar.makeModel);
+         System.out.println("Brand New: " + firstCar.year);
+         System.out.println("You should buy it now?");
+         System.out.println("*****************************");
+         System.out.println("No Thankyou, I want a Chevy");
+         System.out.println("*****************************");
+         // he is shunned. no deal
+         Car secondCar;
+         secondCar = new Car();
+         secondCar.makeModel = "Chevy Cruise";
+         secondCar.year = 2018;
+         // he wont give up!
+         System.out.println("Didnt like Car 1? Take a l00k at car 2: " + secondCar.makeModel);
+         System.out.println("It's Brand New aswell: " + secondCar.year);
+         System.out.println("Best Car in the world m8 you should buy");
+         // we got a buyer. 
+         System.out.println("***********************");
+         System.out.println("ok ok I'll take it!");
+         System.out.println("***********************");
+    }// closes main
+}// closes class 
