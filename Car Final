@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaObjects;
+
+/**
+ *
+ * @author neco.isenberg
+ */
+public class Car {
+    // public member variables: dont have to implement logic 
+    // to change anything 
+    public int year;
+    public String makeModel;
+    int carsRemaining = 100;
+    
+    // private member variables because we want to control
+    // their values: outisde classes acces through methods :)
+    private boolean buyCar;
+    
+     /**
+     * simulates a customer interaction
+     */
+    public void buyCar(){
+        buyCar = true;
+        System.out.println("Do you want to buy a car?");
+    }// closes buyCar
+    
+    public void buyNoCar(){
+        buyCar = false;
+        System.out.println("Why you no buy?");
+    }// closes buyNoCar
+    
+   
+    public int getcarsRamaining(){
+        return carsRemaining;
+    }
+}
