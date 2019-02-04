@@ -1,0 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author neco.isenberg
+ */
+public class StrengthChecker {
+    
+public void setReqChars(String [] args){
+}// closes ReqChars
+public void setLength(int max, int min){
+}// closes Length
+public boolean checkPassword(String[]args){
+    return false;
+    
+}// closes checkPassword
+}// closes class 
+    
