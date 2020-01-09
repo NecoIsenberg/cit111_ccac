@@ -1,0 +1,43 @@
+package winterpractice_necoisenberg;
+
+/**
+ *
+ * @author Neco
+ * Winter Practice trying to get back into coding and stay on my toes
+ * Started this project 1/9/20 @ 5:22 PM. 
+ */
+import java.util.Scanner;
+// import scanner to get user input
+
+public class WinterPractice_NecoIsenberg {
+    // member variables: accesible to all :) 
+    int ride;
+    static int cost;
+    // methods in the class
+    
+    public static void main(String[] args) {
+        // Kennedy Township Fair "Kennedy days"
+        
+    int foodTaste = 9;
+    int food;
+    
+        System.out.print(" Welcome to Kennedy Days ");
+        System.out.print(" 68 Degrees out, great night for the fair ");
+        
+        // build the mysterious scanner :o
+        Scanner scanner = new Scanner(System.in);
+        // get an int from user
+        System.out.print(" How are you enjoying the fairs food so far? On a scale of 1 through 10 ");
+        food = scanner.nextInt();
+        while(foodTaste <= food){
+            System.out.print(" How do you rate the food: " + foodTaste);
+            // loop as long as number is equal to or less than foodTaste which is 9
+            // which we gathered from the user...... we take pride in our food
+            foodTaste = foodTaste + 1;
+        }// close while
+        
+        System.out.print(" Were glad you liked the food....cya next year ");
+        
+    }// closes main
+    
+}// closes class
